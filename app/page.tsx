@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Canvas } from "@react-three/fiber"
 import { Environment, OrbitControls } from "@react-three/drei"
-import { Github, Linkedin, Twitter, Mail, Code, Layers, Database, Server, Cpu, Zap, ChevronDown } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail, Code, Layers, Database, Server, Cpu, Zap, ChevronDown, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -125,7 +125,7 @@ export default function Portfolio() {
               }}
               className="text-6xl font-bold text-yellow-400"
             >
-              You found the Easter Egg! 🎉
+              
             </motion.div>
           </motion.div>
         )}
@@ -136,17 +136,12 @@ export default function Portfolio() {
         <header className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-md border-b border-yellow-400/20">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex justify-between items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-2xl font-bold text-yellow-400"
-              >
-                <span className="cursor-pointer" onClick={triggerEasterEgg}>
+                <span  className="text-2xl font-bold text-yellow-400 cursor-pointer">
+                  <a  href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
                   DEV
+                  </a>
                 </span>
-              </motion.div>
-
+             
               <motion.ul
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -252,9 +247,8 @@ export default function Portfolio() {
               >
                 <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
                 <p className="text-white/80 mb-6">
-                  I'm a passionate frontend developer with over 5 years of experience creating modern, responsive, and
-                  user-friendly web applications. I specialize in React.js, Next.js, and Tailwind CSS, with a strong
-                  focus on creating performant and accessible user interfaces.
+                I am a front-end developer passionate about building fast, scalable, and user-friendly web applications. With expertise in React.js, Next.js, and Tailwind CSS, I create modern and responsive interfaces that enhance user experiences.
+Beyond front-end development, I am the co-founder of Xora, an assignment startup that has generated ₹23,000+ in net profit, showcasing my ability to merge technology with business.
                 </p>
                 <p className="text-white/80 mb-6">
                   My approach combines technical expertise with creative problem-solving, allowing me to build solutions
@@ -276,8 +270,8 @@ export default function Portfolio() {
                 className="grid grid-cols-2 gap-6"
               >
                 {[
-                  { title: "5+", subtitle: "Years Experience" },
-                  { title: "50+", subtitle: "Projects Completed" },
+                  { title: "0", subtitle: "Years Experience" },
+                  { title: "5+", subtitle: "Projects Completed" },
                   { title: "30+", subtitle: "Happy Clients" },
                   { title: "10+", subtitle: "Technologies Mastered" },
                 ].map((item, index) => (
@@ -437,18 +431,18 @@ export default function Portfolio() {
                 <div className="space-y-6">
                   <div className="flex items-center">
                     <Mail className="h-6 w-6 text-yellow-400 mr-4" />
-                    <span>hello@example.com</span>
+                    <span>abhinawk004@gmail.com</span>
                   </div>
 
                   <div className="flex space-x-4">
-                    <motion.a href="#" whileHover={{ y: -5, scale: 1.1 }} className="bg-gray-800 p-3 rounded-full">
+                    <motion.a href="https://github.com/NXGenn" whileHover={{ y: -5, scale: 1.1 }} className="bg-gray-800 p-3 rounded-full">
                       <Github className="h-6 w-6 text-white" />
                     </motion.a>
-                    <motion.a href="#" whileHover={{ y: -5, scale: 1.1 }} className="bg-gray-800 p-3 rounded-full">
+                    <motion.a href="https://www.linkedin.com/in/kumar-abhinaw-36b41532b/" whileHover={{ y: -5, scale: 1.1 }} className="bg-gray-800 p-3 rounded-full">
                       <Linkedin className="h-6 w-6 text-white" />
                     </motion.a>
-                    <motion.a href="#" whileHover={{ y: -5, scale: 1.1 }} className="bg-gray-800 p-3 rounded-full">
-                      <Twitter className="h-6 w-6 text-white" />
+                    <motion.a href="https://www.instagram.com/abh1.naw/" whileHover={{ y: -5, scale: 1.1 }} className="bg-gray-800 p-3 rounded-full">
+                      <Instagram className="h-6 w-6 text-white" />
                     </motion.a>
                   </div>
                 </div>
