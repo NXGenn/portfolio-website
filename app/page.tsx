@@ -162,7 +162,7 @@ export default function Portfolio() {
 
               <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }}>
                 <Button variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400/10">
-                 <a href="https://1drv.ms/w/c/4b5a1c7009208e73/EUWrBaXsU15GizG02wguQxIBkfaamsR2PS0MkTRTIZFEjw?e=74HV4t"> Resume</a>
+                 <a href="https://1drv.ms/w/c/4b5a1c7009208e73/EUWrBaXsU15GizG02wguQxIB_eb8urYVgznKUw6GY5Bh-A?e=SCbpsn"> Resume</a>
                 </Button>
               </motion.div>
             </nav>
